@@ -56,14 +56,9 @@ gsa () {
     git submodule add https://github.com/$1
 }
 
-# Quick clone from github
-cl () {
-    gcl https://github.com/$1
-}
-
 # Quick clone one of my repos
 my () {
-    cl danielfalbo/$1
+    git clone --recurse-submodules https://github.com/danielfalbo/$1
 }
 
 # Quick cd in dotfiles

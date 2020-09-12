@@ -2,8 +2,8 @@
 source $HOME/.config/nvim/vim-plug/plugins.vim
 
 " ================ General Settings ==================
-source ~/.config/nvim/general/functions.vim
-source ~/.config/nvim/general/settings.vim
+source $HOME/.config/nvim/general/functions.vim
+source $HOME/.config/nvim/general/settings.vim
 
 " ================ Plugins Settings ==================
 source $HOME/.config/nvim/plug-config/coc.vim
