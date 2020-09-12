@@ -1,0 +1,30 @@
+{
+    "diagnostic.errorSign": "✘",
+    "diagnostic.warningSign": "⚠",
+    "diagnostic.infoSign": "i",
+    "diagnostic.hintSign": "!",
+    "diagnostic.virtualText": true,
+    "diagnostic.virtualTextCurrentLineOnly": false,
+    "diagnostic.virtualTextPrefix": "❯ ",
+    "suggest.triggerAfterInsertEnter": true,
+    "suggest.timeout": 10000,
+    "explorer.icon.enableNerdfont": true,
+    "explorer.keyMappings": {
+        "<cr>": [
+            "expandable?",
+            "expand",
+            "open"
+        ],
+        "v": "open:vsplit"
+    },
+    "template.email": "danielfalbo@engineer.com",
+    "coc.preferences.formatOnSaveFiletypes": [
+        "javascript",
+        "typescript",
+        "typescriptreact",
+        "json",
+        "javascriptreact",
+        "typescript.tsx",
+        "graphql"
+    ]
+}

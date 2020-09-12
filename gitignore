@@ -1,0 +1,76 @@
+# Compiled source #
+###################
+*.com
+*.class
+*.dll
+*.exe
+*.o
+*.so
+__pycache__/
+*.pyc
+build/
+
+# Temporary files #
+###################
+*.swp
+*.swo
+*~
+
+# Packages #
+############
+*.7z
+*.dmg
+*.gz
+*.iso
+*.jar
+*.rar
+*.tar
+*.zip
+
+# Logs #
+########
+*.log
+
+# OS generated files #
+######################
+.DS_Store*
+ehthumbs.db
+Icon?
+Thumbs.db
+*.lock
+
+# LaTeX #
+#########
+*.aux
+*.fls
+*.fdb_latexmk
+*.out
+
+# CMake #
+#########
+CMakeLists.txt.user
+CMakeCache.txt
+CMakeFiles
+CMakeScripts
+Testing
+Makefile
+cmake_install.cmake
+install_manifest.txt
+compile_commands.json
+CTestTestfile.cmake
+_deps
+
+# Rope #
+########
+.ropeproject
+
+# Java projects #
+#################
+*.iml
+.idea
+.lift
+
+# vim #
+##################
+undo-history/
+.netrwhist

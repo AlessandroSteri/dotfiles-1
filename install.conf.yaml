@@ -1,0 +1,47 @@
+- defaults:
+    link:
+      create: true
+      relink: true
+      force: true
+
+- clean: ['~', '~/.config']
+
+- shell:
+  - [git submodule update --init --recursive, Installing submodules]
+  - [/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)", Installing Homebrew]
+  - [test -d ~/.oh-my-zsh || sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)", Installing ohmyzsh]
+
+- link:
+    ~/bin:
+    ~/.config/alacritty: config/alacritty
+    ~/.config/nvim: config/nvim
+    ~/.config/coc/ultisnips: config/nvim/snippets
+    ~/.gitconfig:
+    ~/.gitignore:
+    ~/.fzf.zsh:
+    ~/.qutebrowser:
+    ~/.shell:
+    ~/.tmux.conf:
+    ~/.vim/coc-settings.json: config/nvim/coc-settings.json
+    ~/.vimrc:
+    ~/.zlogin:
+    ~/.zshenv:
+    ~/.zshrc:
+
+- tap:
+    - homebrew/cask-fonts
+
+- cask:
+    - alacritty
+    - font-jetbrains-mono-nerd-font
+    - qutebrowser
+
+- brew:
+    - node # coc.nvim dependency
+    - tmux
+    - tree
+    - zsh-syntax-highlighting
+    - zsh-autosuggestions
+    - fzf
+    - ripgrep
+    - bat

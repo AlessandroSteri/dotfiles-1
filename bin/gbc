@@ -1,0 +1,10 @@
+#!/usr/bin/env sh
+#
+# 'gbc' is for 'git bad commit'
+#
+
+git pull
+commit_message="$(date) update"
+git add --all
+git commit -m "$commit_message"
+git push

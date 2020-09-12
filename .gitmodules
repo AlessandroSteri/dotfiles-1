@@ -5,3 +5,6 @@
 [submodule "dotbot-brew"]
 	path = dotbot-brew
 	url = https://github.com/d12frosted/dotbot-brew.git
+[submodule "qutebrowser/base16-qutebrowser"]
+	path = qutebrowser/base16-qutebrowser
+	url = https://github.com/theova/base16-qutebrowser

@@ -1,0 +1,14 @@
+[user]
+  name = Daniel Falbo
+  email = 39460524+danielfalbo@users.noreply.github.com
+  username = danielfalbo
+
+[core]
+  excludesfile = ~/.gitignore
+
+[diff]
+  tool = vimdiff
+  ignoreSubmodules = dirty
+
+[submodule]
+  recurse = true
