@@ -67,8 +67,5 @@ alias cdd='cd ~/.dotfiles'
 # Quick install python requirements
 alias pyr='pip3 install -r requirements.txt --user'
 
-# git status -sb in all subdirs
-alias gsba='for item in $(ls -A); do printf "$item: " && xin $item git status -sb; done'
-
 # brew update
 alias bu='brew update && brew outdated && brew upgrade && brew outdated --cask && brew cask upgrade'
