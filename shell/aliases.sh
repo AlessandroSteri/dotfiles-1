@@ -68,4 +68,4 @@ alias cdd='cd ~/.dotfiles'
 alias pyr='pip3 install -r requirements.txt --user'
 
 # brew update
-alias bu='brew update && brew outdated && brew upgrade && brew outdated --cask && brew cask upgrade'
+alias bu='brew update && brew outdated && brew upgrade && brew outdated --cask && brew upgrade --cask'
