@@ -91,8 +91,9 @@ let g:which_key_map.t = {
       \ 'a' : [ ':VtrAttachToPane'                      , 'attach to pane'],
       \ 'c' : [ ':VtrSendCtrlC'                         , 'interrupt runner'],
       \ 'd' : [ ':VtrSendCtrlD'                         , 'stop runner'],
-      \ 'o' : [ ':VtrOpenRunner'                        , 'open new pane'],
-      \ 'r' : [ ':VtrSendCommandToRunner'               , 'run'],
+      \ 'k' : [ ':VtrKillRunner'                       , 'kill runner'],
+      \ 'o' : [ ':VtrOpenRunner'                        , 'open runner'],
+      \ 'r' : [ ':VtrSendCommandToRunner'               , 'run']
       \ }
 let g:which_key_map['z'] = [ ':Files'                   , 'fuzzy find files']
 let g:which_key_map['.'] = [ ':e $MYVIMRC'              , 'edit vimrc' ]

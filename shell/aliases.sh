@@ -45,9 +45,6 @@ cmk () {
 # Use colors in coreutils utilities output
 alias tree='tree -a -C -l -q -I ".git"'
 
-# Quick lazygit
-alias lg=lazygit
-
 # Quick zathura
 alias z=zathura
 
