@@ -22,5 +22,9 @@ c.downloads.open_dispatcher='zathura'
 # Go fullscreen with Ctrl + Cmd + f just like every other mac app
 config.bind('<Meta-Ctrl-f>', 'fullscreen')
 
+# Pseudo dark mode
+config.set("colors.webpage.darkmode.enabled", True)
+config.set("colors.webpage.darkmode.policy.images", "smart")
+
 # Colors (Nord)
 config.source('base16-qutebrowser/themes/minimal/base16-nord.config.py')

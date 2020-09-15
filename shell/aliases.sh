@@ -58,9 +58,6 @@ my () {
     git clone --recurse-submodules https://github.com/danielfalbo/$1
 }
 
-# Quick cd in dotfiles
-alias cdd='cd ~/.dotfiles'
-
 # Quick install python requirements
 alias pyr='pip3 install -r requirements.txt --user'
 
