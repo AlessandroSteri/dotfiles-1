@@ -1,4 +1,4 @@
-" Delete trailing white space before writing the buffer
+" Delete trailing white spaces
 function CleanExtraSpaces()
   let save_cursor = getpos(".")
   let old_query = getreg('/')
@@ -7,15 +7,13 @@ function CleanExtraSpaces()
   call setreg('/', old_query)
 endfunction
 
-autocmd BufWritePre *.txt,*.js,*.py,*.wiki,*.sh,*.coffee :call CleanExtraSpaces()
-
 " Open pdf file under cursor with zathura
 function Zathura()
   let l:Command = expand("<cfile>")
   execute "!zathura " . l:Command . "&"
 endfunction
 
-" Switch to relative numbering
+" Toggle relativenumbers
 function! NumberToggle()
   if(&rnu == 1)
     set norelativenumber
