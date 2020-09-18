@@ -32,4 +32,4 @@ Plug 'christoomey/vim-tmux-navigator'               " Seamless navigation betwee
 Plug 'christoomey/vim-tmux-runner'                  " Async run file in tmux pane
 " Live markdown preview
 Plug 'iamcco/markdown-preview.nvim', {'do': { -> mkdp#util#install() }, 'for': ['markdown', 'vim-plug']}
-call plug#end() " Initialize plugin system
+call plug#end()                                     " Initialize plugin system

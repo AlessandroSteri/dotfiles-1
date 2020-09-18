@@ -35,7 +35,7 @@ bindkey '^[[Z' reverse-menu-complete
 bindkey "^P" up-line-or-history
 bindkey "^N" down-line-or-history
 
-# Use C-] to conferm suggestion
+# Use C-] to confirm suggestion
 bindkey "^]" end-of-line
 
 # Fzf utils
