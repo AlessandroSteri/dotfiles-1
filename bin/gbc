@@ -3,7 +3,7 @@
 # 'gbc' is for 'git bad commit'
 #
 
-git pull
+git pull --ff-only
 commit_message="$(date) update"
 git add --all
 git commit -m "$commit_message"
