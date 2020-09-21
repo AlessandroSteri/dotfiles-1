@@ -9,6 +9,7 @@ function! s:goyo_enter()
     endif
     set scrolloff=999
     Limelight
+    autocmd CursorHold <buffer> update
     if (&filetype=='markdown')
         Voom pandoc
     elseif (&filetype=='tex')
@@ -18,7 +19,6 @@ function! s:goyo_enter()
     elseif (&filetype=='html' || &filetype=='htmldjango')
         Voom html
     endif
-    autocmd CursorHold <buffer> update
 endfunction
 
 function! s:goyo_leave()
@@ -27,8 +27,9 @@ function! s:goyo_leave()
         silent !tmux list-panes -F '\#F' | grep -q Z && tmux resize-pane -Z
     endif
     autocmd! CursorHold
-    set scrolloff=5
+    set scrolloff=1
     Limelight!
+    hi clear Conceal
 endfunction
 
 autocmd! User GoyoEnter nested call <SID>goyo_enter()
