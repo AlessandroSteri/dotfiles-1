@@ -1,6 +1,6 @@
 function! s:goyo_enter()
     let fts = ['markdown', 'tex', 'python', 'html', 'htmldjango']
-    if index(fts, &filetype) != -1
+    if index(fts, &filetype) != -1 && &columns >= 120
         Goyo 120
     endif
     if executable('tmux') && strlen($TMUX)
@@ -10,13 +10,13 @@ function! s:goyo_enter()
     set scrolloff=999
     Limelight
     autocmd CursorHold <buffer> update
-    if (&filetype=='markdown')
+    if (&filetype=='markdown') && &columns >= 120
         Voom pandoc
-    elseif (&filetype=='tex')
+    elseif (&filetype=='tex') && &columns >= 120
         Voom latex
-    elseif (&filetype=='python')
+    elseif (&filetype=='python') && &columns >= 120
         Voom python
-    elseif (&filetype=='html' || &filetype=='htmldjango')
+    elseif (&filetype=='html' || &filetype=='htmldjango') && &columns >= 120
         Voom html
     endif
 endfunction

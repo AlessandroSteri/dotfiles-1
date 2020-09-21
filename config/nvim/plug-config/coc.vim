@@ -62,8 +62,5 @@ command! -nargs=0 OR :call CocAction('runCommand', 'editor.action.organizeImport
 " Exit vim if the only remeaning pane would be the coc explorer
 autocmd BufEnter * if (winnr("$") == 1 && &filetype == 'coc-explorer') | q | endif
 
-" Add template automatically while an empty buffer is being created
-autocmd BufNewFile *.* CocCommand template.templateTop
-
 " Snippets author name
 let g:snips_author = "Daniel Falbo"

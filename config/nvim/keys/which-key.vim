@@ -23,7 +23,7 @@ let g:which_key_map.c = {
       \ 'b' : [ ':CocNext'                              , 'next action'],
       \ 'B' : [ ':CocPrev'                              , 'prev action'],
       \ 'c' : [ ':CocList commands'                     , 'commands'],
-      \ 'd' : [ '<Plug>(coc-definition)'                , 'go to definition'],
+      \ 'd' : [ '<Plug>(coc-definition)'                , 'definition'],
       \ 'D' : [ '<Plug>(coc-declaration)'               , 'declaration'],
       \ 'E' : [ ':CocList extensions'                   , 'extensions'],
       \ 'f' : [ '<Plug>(coc-format-selected)'           , 'format selected'],
@@ -101,6 +101,7 @@ let g:which_key_map[','] = [ ':Goyo'                    , 'zen' ]
 let g:which_key_map['='] = [ '<C-w>='                   , 'balance windows' ]
 let g:which_key_map['-'] = [ '<C-w>s'                   , 'split vertically' ]
 let g:which_key_map['\'] = [ '<C-w>v'                   , 'split horizontally' ]
+let g:which_key_map[';'] = [ ':CocCommand template.templateTop', 'load template']
 
 " Trasparent Separator Background
 autocmd FileType which_key highlight WhichKeySeperator ctermbg=none
