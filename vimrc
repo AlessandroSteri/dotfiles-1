@@ -11,6 +11,7 @@ source $HOME/.config/nvim/plug-config/zen.vim
 source $HOME/.config/nvim/plug-config/tex.vim
 source $HOME/.config/nvim/plug-config/md.vim
 source $HOME/.config/nvim/plug-config/airline.vim
+source $HOME/.config/nvim/plug-config/crease.vim
 
 " ================ Key Mappings ======================
 source $HOME/.config/nvim/keys/mappings.vim

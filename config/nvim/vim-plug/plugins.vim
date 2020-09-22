@@ -1,8 +1,8 @@
 " Automatic vim-plug installation
 if empty(glob('~/.vim/autoload/plug.vim'))
-  silent !curl -fLo ~/.vim/autoload/plug.vim --create-dirs
-    \ https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
-  autocmd VimEnter * PlugUpdate --sync | source $MYVIMRC
+    silent !curl -fLo ~/.vim/autoload/plug.vim --create-dirs
+                \ https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+    autocmd VimEnter * PlugUpdate --sync | source $MYVIMRC
 endif
 
 call plug#begin('~/.vim/autoload/plugged')          " Specify a directory for plugins
@@ -17,6 +17,7 @@ Plug 'vim-voom/voom'                                " Sidebar table of contents 
 Plug 'lervag/vimtex'                                " LaTeX support
 Plug 'KeitaNakamura/tex-conceal.vim'                " TeX concealing
 Plug 'danielfalbo/vim-cute'                         " General concealing
+Plug 'scr1pt0r/crease.vim'                          " Easy foldtext customization
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } } " Fuzzy finder
 Plug 'junegunn/fzf.vim'                             " Default implementation of fzf features
 Plug 'ryanoasis/vim-devicons'                       " Nerd Font icons
@@ -28,8 +29,8 @@ Plug 'vim-airline/vim-airline'                      " Status/tabline
 Plug 'tpope/vim-dispatch'                           " Asynchronous build and test dispatcher
 Plug 'liuchengxu/vim-which-key'                     " Keybindings popup
 Plug 'easymotion/vim-easymotion'                    " Faster motions
-Plug 'christoomey/vim-tmux-navigator'               " Seamless navigation between tmux panes and vim splits
 Plug 'christoomey/vim-tmux-runner'                  " Async run file in tmux pane
+Plug 'christoomey/vim-tmux-navigator'               " Seamless navigation between tmux panes and vim splits
 " Live markdown preview
 Plug 'iamcco/markdown-preview.nvim', {'do': { -> mkdp#util#install() }, 'for': ['markdown', 'vim-plug']}
 call plug#end()                                     " Initialize plugin system
