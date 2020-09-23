@@ -72,7 +72,7 @@ let g:which_key_map['j'] = [ ':resize -5'               , 'decrease split width'
 let g:which_key_map['k'] = [ ':resize +5'               , 'decrease split height']
 let g:which_key_map['l'] = [ ':vertical:resize +5'      , 'increase split height']
 let g:which_key_map['m'] = [ ':Make'                    , 'Make' ]
-let g:which_key_map['n'] = [ 'NumberToggle()'           , 'relative numbers' ]
+let g:which_key_map['n'] = [ ':set rnu!'                , 'relative numbers' ]
 let g:which_key_map['o'] = [ ':wincmd o'                , 'close all split except the current']
 let g:which_key_map.p = {
       \ 'name' : '+plugins',

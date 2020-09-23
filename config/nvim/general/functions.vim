@@ -13,15 +13,6 @@ function Zathura()
   execute "!zathura " . l:Command . "&"
 endfunction
 
-" Toggle relativenumbers
-function! NumberToggle()
-  if(&rnu == 1)
-    set norelativenumber
-  else
-    set relativenumber
-  endif
-endfunction
-
 " Exit Vim if the only remeaning pane would be the compiler errors pane
 autocmd BufEnter * if (winnr("$") == 1 && &filetype == 'qf') | quit | endif
 
