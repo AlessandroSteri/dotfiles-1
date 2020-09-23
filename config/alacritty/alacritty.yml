@@ -3,9 +3,6 @@ font:
       family: JetBrainsMono Nerd Font
   size: 15.0
 
-mouse:
-  hide_when_typing: true
-
 colors:
   primary:
     background: '#2e3440'
@@ -54,8 +51,3 @@ colors:
     magenta: '#8c738c'
     cyan: '#6d96a5'
     white: '#aeb3bb'
-
-window:
-    decorations: none
-
-background_opacity: 0.95
