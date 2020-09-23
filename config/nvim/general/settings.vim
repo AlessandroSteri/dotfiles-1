@@ -19,7 +19,6 @@ set gdefault                " Use 'g' flag by default with :s/foo/bar/.
 set splitbelow              " When splitting, put the new window below the current
 set splitright              " When splitting, put the new window right of the current
 set clipboard=unnamed       " Use system clipboard
-set cursorline              " Highlight current line
 set path+=**                " Search down into subfolders
 set autochdir               " Automatically change directory to che current buffer's directory
 set nojoinspaces            " Prevents inserting two spaces after punctuation on a join

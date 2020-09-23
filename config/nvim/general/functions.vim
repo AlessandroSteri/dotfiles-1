@@ -40,3 +40,10 @@ function s:Mkdir()
 endfunction
 
 autocmd BufWritePre * call s:Mkdir()
+
+" Highlight current line, but only in active window
+augroup CursorLineOnlyInActiveWindow
+    autocmd!
+    autocmd VimEnter,WinEnter,BufWinEnter * setlocal cursorline
+    autocmd WinLeave * setlocal nocursorline
+augroup END
