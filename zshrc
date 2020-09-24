@@ -40,3 +40,8 @@ bindkey "^]" end-of-line
 
 # Fzf utils
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+
+# Automatically attach to default tmux session
+if [ -z "$TMUX" ]; then
+    daniel
+fi

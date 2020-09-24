@@ -1,7 +1,7 @@
 font:
   normal:
       family: JetBrainsMono Nerd Font
-  size: 15.0
+  size: 18.0
 
 colors:
   primary:
@@ -51,3 +51,6 @@ colors:
     magenta: '#8c738c'
     cyan: '#6d96a5'
     white: '#aeb3bb'
+
+window:
+    decorations: transparent
