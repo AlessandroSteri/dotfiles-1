@@ -13,14 +13,12 @@ c.fonts.default_size = '15pt'
 # Limit fullscreen to the browser window
 c.content.fullscreen.window = True
 
-# Use nvim as textareas editor
-c.editor.command = ["nvim", "{}"]
+# Use nvim as textareas editor with persistent cursor movement
+c.editor.command = ["alacritty", "-e", "nvim",
+                    "{}", "+call cursor({line}, {column})"]
 
 # Use zathura as default downloads preview command
-c.downloads.open_dispatcher='zathura'
-
-# Go fullscreen with Ctrl + Cmd + f just like every other mac app
-config.bind('<Meta-Ctrl-f>', 'fullscreen')
+c.downloads.open_dispatcher = 'zathura'
 
 # Pseudo dark mode
 config.set("colors.webpage.darkmode.enabled", True)
