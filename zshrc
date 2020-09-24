@@ -5,7 +5,7 @@ export ZSH="$HOME/.oh-my-zsh"
 export ZSH_THEME="robbyrussell"
 
 # oh-my-zsh plugins
-plugins=(git)
+plugins=(git vi-mode xcode tmux common-aliases brew)
 
 # enable oh-my-zsh
 source $ZSH/oh-my-zsh.sh
@@ -30,10 +30,6 @@ bindkey -M menuselect 'j' vi-down-line-or-history
 
 # Use Shift-Tab to move through the completion menu backwards
 bindkey '^[[Z' reverse-menu-complete
-
-# Use C-p and C-n to navigate history
-bindkey "^P" up-line-or-history
-bindkey "^N" down-line-or-history
 
 # Use C-] to confirm suggestion
 bindkey "^]" end-of-line

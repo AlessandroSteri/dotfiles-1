@@ -3,10 +3,6 @@ alias ll='ls -lAh'
 alias la='ls -A'
 alias l='ls'
 
-# Aliases to protect against overwriting
-alias cp='cp -i'
-alias mv='mv -i'
-
 # Create a directory and cd into it
 mcd() {
     mkdir "${1}" && cd "${1}"
@@ -26,7 +22,7 @@ alias py=python3
 # Quick IPython shell
 alias ipy=ipython
 
-# Attach to default tmux session if exists,
+# Attach to default tmux session if exists
 # else create it
 alias daniel='tmux new-session -A -s daniel'
 
@@ -49,9 +45,7 @@ alias tree='tree -a -C -l -q -I ".git"'
 alias z=zathura
 
 # Quick git add submodule
-gsa () {
-    git submodule add https://github.com/$1
-}
+alias gsa='git submodule add'
 
 # Quick clone one of my repos
 my () {
@@ -60,9 +54,6 @@ my () {
 
 # Quick install python requirements
 alias pyr='pip3 install -r requirements.txt --user'
-
-# brew update
-alias bu='brew update && brew outdated && brew upgrade && brew outdated --cask && brew upgrade --cask'
 
 # tmux rename window
 alias trn='tmux rename-window'
