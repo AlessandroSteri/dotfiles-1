@@ -13,7 +13,7 @@ set nofoldenable            " Do not fold anything by default
 set foldnestmax=3           " deepest fold is 3 levels
 set ignorecase              " Ignore case when searching
 set smartcase               " Do not ignorecase anymore if the search pattern contains capitals
-set signcolumn=yes          " Add by default an extra column for linting signs
+set signcolumn=number       " Merge sign column and number column into one
 set nostartofline           " Do not jump to first character with page commands
 set gdefault                " Use 'g' flag by default with :s/foo/bar/.
 set splitbelow              " When splitting, put the new window below the current
