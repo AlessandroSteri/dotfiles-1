@@ -29,7 +29,8 @@ alias daniel='tmux new-session -A -s daniel'
 # Quick build and export compile commands
 cmk () {
     if [ ! -f "CMakeLists.txt" ]; then
-        v CMakeLists.txt
+        v CMakeLists.cmake
+        mv CMakeLists.cmake CMakeLists.txt
     fi
     if [ ! -f "main.cpp" ]; then
         v main.cpp
