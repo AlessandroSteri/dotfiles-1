@@ -58,3 +58,6 @@ alias pyr='pip3 install -r requirements.txt --user'
 
 # tmux rename window
 alias trn='tmux rename-window'
+
+# quick clear
+alias c=clear

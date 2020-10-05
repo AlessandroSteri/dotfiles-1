@@ -13,10 +13,6 @@ c.fonts.default_size = '15pt'
 # Limit fullscreen to the browser window
 c.content.fullscreen.window = True
 
-# Use nvim as textareas editor with persistent cursor movement
-c.editor.command = ["alacritty", "-e", "nvim",
-                    "{}", "+call cursor({line}, {column})"]
-
 # Use zathura as default downloads preview command
 c.downloads.open_dispatcher = 'zathura'
 
@@ -26,3 +22,10 @@ config.set("colors.webpage.darkmode.policy.images", "smart")
 
 # Colors (Nord)
 config.source('base16-qutebrowser/themes/minimal/base16-nord.config.py')
+
+# Toggle dark mode and restart
+config.bind(',', 'config-cycle colors.webpage.darkmode.enabled ;; restart')
+
+# Load customization done via :set, :bind, :unbind, etc.
+# Useful to toggle the dark mode
+config.load_autoconfig()
