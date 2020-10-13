@@ -41,9 +41,9 @@ endfunction
 
 autocmd BufWritePre * call s:Mkdir()
 
-" Highlight current line, but only in active window
+" Highlight current line, and show relative numbers only in active window
 augroup CursorLineOnlyInActiveWindow
     autocmd!
-    autocmd VimEnter,WinEnter,BufWinEnter * setlocal cursorline
-    autocmd WinLeave * setlocal nocursorline
+    autocmd VimEnter,WinEnter,BufWinEnter * setlocal cursorline relativenumber
+    autocmd WinLeave * setlocal nocursorline norelativenumber
 augroup END
