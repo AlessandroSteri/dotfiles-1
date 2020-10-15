@@ -7,7 +7,6 @@ function! s:goyo_enter()
         silent !tmux set status off
         silent !tmux list-panes -F '\#F' | grep -q Z || tmux resize-pane -Z
     endif
-    set scrolloff=999
     autocmd CursorHold <buffer> update
     if (&filetype=='markdown') && &columns >= 120
         Voom pandoc
@@ -26,7 +25,6 @@ function! s:goyo_leave()
         silent !tmux list-panes -F '\#F' | grep -q Z && tmux resize-pane -Z
     endif
     autocmd! CursorHold
-    set scrolloff=1
     hi clear Conceal
 endfunction
 
