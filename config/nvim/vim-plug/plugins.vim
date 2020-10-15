@@ -12,7 +12,6 @@ Plug 'neoclide/coc.nvim', {'branch': 'release'}     " Snippets engine, linter, c
 Plug 'honza/vim-snippets'                           " Snippets
 Plug 'arcticicestudio/nord-vim'                     " Nord theme
 Plug 'junegunn/goyo.vim'                            " Distraction-free writing
-Plug 'junegunn/limelight.vim'                       " Hyperfocus-writing
 Plug 'vim-voom/voom'                                " Sidebar table of contents for markdown files
 Plug 'lervag/vimtex'                                " LaTeX support
 Plug 'KeitaNakamura/tex-conceal.vim'                " TeX concealing

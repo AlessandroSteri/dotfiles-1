@@ -3,7 +3,12 @@ let g:coc_global_extensions = [
       \ 'coc-snippets',
       \ 'coc-pairs',
       \ 'coc-explorer',
-      \ 'coc-template'
+      \ 'coc-template',
+      \ 'coc-texlab',
+      \ 'coc-sourcekit',
+      \ 'coc-python',
+      \ 'coc-clangd',
+      \ 'coc-json'
       \ ]
 
 " Make <tab> used for trigger completion,
