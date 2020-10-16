@@ -1,7 +1,3 @@
-set foldcolumn=0
-set foldlevelstart=0
-set foldmarker=\ {{{,\ }}}
-
 " 'space' is fold char ↓
 set fillchars=fold:\  " this comment is just making sure there is a space after the \
 function! IsMod()
@@ -31,8 +27,6 @@ function! FoldTxt() abort
                 \ ))
 endfunction
 
-"let g:fold_label = ' '
-"let g:commented_label = ' '
 let g:lines_label = 'lines'
 let g:modified_label = '⚡·'
 
