@@ -85,6 +85,7 @@ let g:which_key_map.p = {
 let g:which_key_map['r'] = [ 'CleanExtraSpaces()'       , 'remove extra whitespaces' ]
 let g:which_key_map['s'] = [ ''                         , 'search and replace' ]
 noremap <Leader>s :%s//<Left>
+vnoremap <Leader>s :s//<Left>
 let g:which_key_map.t = {
       \ 'name' : '+terminal',
       \ 'a' : [ ':VtrAttachToPane'                      , 'attach to pane'],
