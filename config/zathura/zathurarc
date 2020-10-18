@@ -1,0 +1,8 @@
+# Settings
+set selection-clipboard clipboard
+set statusbar-h-padding 10
+set statusbar-v-padding 10
+set font "JetBrainsMono Nerd Font normal 15"
+
+# Colors (Nord)
+include "base16-zathura/build_schemes/base16-nord.config"
