@@ -1,0 +1,5 @@
+```sh
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
+git clone https://github.com/danielfalbo/dotfiles
+dotfiles/install
+```
