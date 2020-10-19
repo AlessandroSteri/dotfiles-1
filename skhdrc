@@ -8,7 +8,7 @@ alt - return : open -a qutebrowser
 ctrl - backspace : osascript -e 'tell application "Finder" to empty trash'
 
 # toggle menu bar
-alt - b : togglebar
+cmd + alt - b : togglebar
 
 # focus window
 alt - tab : yabai -m window --focus recent
