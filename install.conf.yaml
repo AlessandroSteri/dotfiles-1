@@ -30,6 +30,9 @@
     ~/.zshenv:
     ~/.zshrc:
 
+- create:
+    - ~/Developer
+
 - tap:
     - homebrew/cask-fonts
     - zegervdv/zathura
