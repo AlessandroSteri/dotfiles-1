@@ -70,7 +70,11 @@ _deps
 .idea
 .lift
 
-# vim #
+# Vim #
 ##################
 undo-history/
 .netrwhist
+
+# Markdown #
+##################
+.obsidian/
