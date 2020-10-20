@@ -31,6 +31,7 @@ Plug 'easymotion/vim-easymotion'                    " Faster motions
 Plug 'christoomey/vim-tmux-runner'                  " Async run file in tmux pane
 Plug 'christoomey/vim-tmux-navigator'               " Seamless navigation between tmux panes and vim splits
 Plug 'keith/swift.vim'                              " Swift tools
+Plug 'plasticboy/vim-markdown'                      " Markdown concealing and other utils
 " Live markdown preview
 Plug 'iamcco/markdown-preview.nvim', {'do': { -> mkdp#util#install() }, 'for': ['markdown', 'vim-plug']}
 call plug#end()                                     " Initialize plugin system
