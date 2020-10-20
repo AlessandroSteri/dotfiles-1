@@ -52,7 +52,7 @@ let g:which_key_map.c = {
       \ ';' : [ '<Plug>(coc-refactor)'                  , 'refactor'],
       \ }
 let g:which_key_map['d'] = [ ':bd'                      , 'delete buffer']
-let g:which_key_map['e'] = [ ':CocCommand explorer'     , 'explorer']
+let g:which_key_map['e'] = [ ':CocCommand explorer'     , 'toggle explorer']
 let g:which_key_map['f'] = [ ':Rg'                      , 'fuzzy find text']
 let g:which_key_map.g = {
       \ 'name' : '+git',
@@ -91,13 +91,13 @@ let g:which_key_map.t = {
       \ 'a' : [ ':VtrAttachToPane'                      , 'attach to pane'],
       \ 'c' : [ ':VtrSendCtrlC'                         , 'interrupt runner'],
       \ 'd' : [ ':VtrSendCtrlD'                         , 'stop runner'],
-      \ 'k' : [ ':VtrKillRunner'                       , 'kill runner'],
+      \ 'k' : [ ':VtrKillRunner'                        , 'kill runner'],
       \ 'o' : [ ':VtrOpenRunner'                        , 'open runner'],
       \ 'r' : [ ':VtrSendCommandToRunner'               , 'run']
       \ }
 let g:which_key_map['z'] = [ ':Files'                   , 'fuzzy find files']
 let g:which_key_map['.'] = [ ':e $MYVIMRC'              , 'edit vimrc' ]
-let g:which_key_map[','] = [ ':Goyo'                    , 'zen' ]
+let g:which_key_map[','] = [ ':Goyo'                    , 'toggle zen mode' ]
 let g:which_key_map['='] = [ '<C-w>='                   , 'balance windows' ]
 let g:which_key_map['-'] = [ '<C-w>s'                   , 'split vertically' ]
 let g:which_key_map['\'] = [ '<C-w>v'                   , 'split horizontally' ]

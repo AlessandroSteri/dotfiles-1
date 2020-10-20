@@ -9,7 +9,7 @@ function! s:goyo_enter()
     endif
     autocmd CursorHold <buffer> update
     if (&filetype=='markdown') && &columns >= 120
-        Voom pandoc
+        Voom markdown
     elseif (&filetype=='tex') && &columns >= 120
         Voom latex
     elseif (&filetype=='python') && &columns >= 120
