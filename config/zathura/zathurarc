@@ -1,7 +1,6 @@
 # Settings
 set selection-clipboard clipboard
-set statusbar-h-padding 10
-set statusbar-v-padding 10
+set statusbar-v-padding 11
 set font "JetBrainsMono Nerd Font normal 15"
 
 # Colors (Nord)

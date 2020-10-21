@@ -10,6 +10,13 @@ c.content.autoplay = False
 c.fonts.default_family = ['JetBrainsMono Nerd Font']
 c.fonts.default_size = '15pt'
 
+# Padding
+c.statusbar.padding = {"bottom": 4, "left": 0, "right": 0, "top": 5}
+c.tabs.padding = {"bottom": 6, "left": 5, "right": 5, "top": 5}
+
+# Disable tabs indicators
+c.tabs.indicator.width = 0
+
 # Limit fullscreen to the browser window
 c.content.fullscreen.window = True
 
