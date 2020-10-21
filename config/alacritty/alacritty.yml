@@ -53,4 +53,6 @@ colors:
     white: '#aeb3bb'
 
 window:
-    decorations: transparent
+    padding:
+        y: 11
+    decorations: buttonless
