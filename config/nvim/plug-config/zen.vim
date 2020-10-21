@@ -6,6 +6,7 @@ function! s:goyo_enter()
     if executable('tmux') && strlen($TMUX)
         silent !tmux set status off
         silent !tmux list-panes -F '\#F' | grep -q Z || tmux resize-pane -Z
+        silent !tmux set pane-border-status off
     endif
     autocmd CursorHold <buffer> update
     if (&filetype=='markdown') && &columns >= 120
@@ -23,6 +24,7 @@ function! s:goyo_leave()
     if executable('tmux') && strlen($TMUX)
         silent !tmux set status on
         silent !tmux list-panes -F '\#F' | grep -q Z && tmux resize-pane -Z
+        silent !tmux set pane-border-status top
     endif
     autocmd! CursorHold
     hi clear Conceal
