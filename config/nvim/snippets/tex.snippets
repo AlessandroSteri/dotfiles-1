@@ -117,7 +117,11 @@ snippet iff "iff" Ai
 \iff
 endsnippet
 
-snippet mk "Math" wA
+snippet && "logic and" Ai
+\land
+endsnippet
+
+snippet mm "Math" wA
 $${1}$`!p
 if t[2] and t[2][0] not in [',', '.', '?', '-', ' ']:
 	snip.rv = ' '
@@ -126,10 +130,14 @@ else:
 `$2
 endsnippet
 
+snippet mk "Math" iA
+\(${1}\)
+endsnippet
+
 snippet dm "Math" wA
 \[
 ${1:${VISUAL}}
-.\] $0
+.\]$0
 endsnippet
 
 #snippet ali "Align" bA
@@ -211,7 +219,7 @@ snippet == "equals" iA
 endsnippet
 
 snippet != "equals" iA
-\neq 
+\neq
 endsnippet
 
 #snippet ceil "ceil" iA
@@ -275,11 +283,11 @@ endsnippet
 #endsnippet
 #
 #snippet lim "limit" w
-#\lim_{${1:n} \to ${2:\infty}} 
+#\lim_{${1:n} \to ${2:\infty}}
 #endsnippet
 #
 #snippet limsup "limsup" w
-#\limsup_{${1:n} \to ${2:\infty}} 
+#\limsup_{${1:n} \to ${2:\infty}}
 #endsnippet
 #
 #snippet prod "product" w
@@ -323,19 +331,19 @@ endsnippet
 #endsnippet
 
 snippet <= "leq" iA
-\le 
+\le
 endsnippet
 
 snippet >= "geq" iA
-\ge 
+\ge
 endsnippet
 
-#snippet EE "geq" iA
-#\exists 
-#endsnippet
+snippet EE "geq" iA
+\exists
+endsnippet
 
 snippet AA "forall" iA
-\forall 
+\forall
 endsnippet
 
 #snippet xnn "xn" iA
@@ -406,16 +414,16 @@ endsnippet
 #endsnippet
 #
 #snippet nabl "nabla" iA
-#\nabla 
+#\nabla
 #endsnippet
 #
 #snippet xx "cross" iA
-#\times 
+#\times
 #endsnippet
 #
 #priority 100
 #snippet ** "cdot" iA
-#\cdot 
+#\cdot
 #endsnippet
 #
 #snippet norm "norm" iA
@@ -440,7 +448,7 @@ endsnippet
 
 priority 100
 snippet -> "to" iA
-\to 
+\to
 endsnippet
 
 priority 200
@@ -449,7 +457,7 @@ snippet <-> "leftrightarrow" iA
 endsnippet
 
 snippet !> "mapsto" iA
-\mapsto 
+\mapsto
 endsnippet
 
 #snippet invs "inverse" iA
@@ -474,40 +482,48 @@ endsnippet
 
 
 snippet ~~ "~" iA
-\sim 
+\sim
 endsnippet
 
 #snippet set "set" wA
 #\\{$1\\} $0
 #endsnippet
 
-snippet || "mid" iA
- \mid 
+#snippet ||| "mid" iA
+#\mid
+#endsnippet
+
+snippet || "logic or" iA
+\lor
 endsnippet
 
 
 #snippet cc "subset" Ai
-#\subset 
+#\subset
 #endsnippet
-#
-#snippet notin "not in " iA
-#\not\in 
-#endsnippet
-#
-#snippet inn "in " iA
-#\in 
-#endsnippet
-#
+
+snippet notin "not in " iA
+\not\in
+endsnippet
+
+snippet inn "in " iA
+\in
+endsnippet
+
+snippet nott "logic not" iA
+\lnot
+endsnippet
+
 #snippet NN "n" iA
 #\N
 #endsnippet
 #
 #snippet Nn "cap" iA
-#\cap 
+#\cap
 #endsnippet
 #
 #snippet UU "cup" iA
-#\cup 
+#\cup
 #endsnippet
 #
 #snippet uuu "bigcup" iA
@@ -521,11 +537,11 @@ endsnippet
 #snippet OO "emptyset" iA
 #\O
 #endsnippet
-
-snippet RR "real" iA
-\R
-endsnippet
-
+#
+#snippet RR "real" iA
+#\R
+#endsnippet
+#
 #snippet QQ "Q" iA
 #\Q
 #endsnippet
@@ -535,11 +551,11 @@ endsnippet
 #endsnippet
 
 snippet <! "normal" iA
-\triangleleft 
+\triangleleft
 endsnippet
 
 snippet <> "hokje" iA
-\diamond 
+\diamond
 endsnippet
 
 
