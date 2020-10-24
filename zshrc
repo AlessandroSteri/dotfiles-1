@@ -4,6 +4,9 @@ export ZSH="$HOME/.oh-my-zsh"
 # oh-my-zsh theme
 export ZSH_THEME="robbyrussell"
 
+# Display dots whilst waiting for completion
+COMPLETION_WAITING_DOTS="true"
+
 # oh-my-zsh plugins
 plugins=(git vi-mode xcode tmux common-aliases brew)
 
