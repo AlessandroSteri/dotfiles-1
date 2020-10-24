@@ -11,6 +11,3 @@
 [submodule "config/zathura/base16-zathura"]
 	path = config/zathura/base16-zathura
 	url = https://github.com/HaoZeke/base16-zathura
-[submodule "spicetify-themes"]
-	path = spicetify-themes
-	url = https://github.com/morpheusthewhite/spicetify-themes

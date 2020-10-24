@@ -67,9 +67,6 @@
 - shell:
   - [pip3 install pynvim --user, Installing neovim support for python plugins]
   -
-    command: test -d $HOME/spicetify_data || { open -a Spotify && spicetify && spicetify backup apply enable-devtool && cp -r spicetify-themes/Nord ~/spicetify_data/Themes/Nord && spicetify config current_theme Nord && spicetify update && spicetify config extensions keyboardShortcut.js && spicetify config extensions fullAppDisplay.js && spicetify apply }
-    description: Installing Spotify extensions
-  -
     command: mkdir -p $(brew --prefix zathura)/lib/zathura && ln -Fs $(brew --prefix zathura-pdf-poppler)/libpdf-poppler.dylib $(brew --prefix zathura)/lib/zathura/libpdf-poppler.dylib
     description: Linking the zathura required plugins into place
   -
