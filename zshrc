@@ -22,6 +22,9 @@ source $(brew --prefix)/share/zsh-autosuggestions/zsh-autosuggestions.zsh
 # vi-mode
 bindkey -v
 
+# Eliminate delay on <esc>
+export KEYTIMEOUT=1
+
 # Use the vi navigation keys besides cursor keys is menu completion
 bindkey -M menuselect 'h' vi-backward-char
 bindkey -M menuselect 'k' vi-up-line-or-history
