@@ -55,6 +55,7 @@
     - ripgrep
     - bat
     - ipython
+    - lazygit
     - khanhas/tap/spicetify-cli
     - koekeishiya/formulae/yabai
     - koekeishiya/formulae/skhd
