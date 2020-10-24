@@ -49,6 +49,8 @@
     - node
     - tmux
     - tree
+    - tldr
+    - most
     - zsh-syntax-highlighting
     - zsh-autosuggestions
     - fzf
